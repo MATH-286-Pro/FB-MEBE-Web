@@ -177,10 +177,10 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <div class="result-card">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/FB-MEBE-Pitch.mp4"
-                    type="video/mp4">
-          </video>
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/FB-MEBE-Pitch.mp4"
+                      type="video/mp4">
+            </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Pitch Control</p>
               <p class="result-card-description">The policy stabilizes the robot while matching the commanded pitch behavior.</p>
@@ -189,10 +189,10 @@
         </div>
         <div class="item item-chair-tp">
           <div class="result-card">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/FB-MEBE-Forward.mp4"
-                    type="video/mp4">
-          </video>
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/FB-MEBE-Forward.mp4"
+                      type="video/mp4">
+            </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Forward</p>
               <p class="result-card-description">FB-MEBE produces smooth forward motion with stable whole-body coordination.</p>
@@ -201,10 +201,10 @@
         </div>
         <div class="item item-shiba">
           <div class="result-card">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/FB-MEBE-Backward.mp4"
-                    type="video/mp4">
-          </video>
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/FB-MEBE-Backward.mp4"
+                      type="video/mp4">
+            </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Backward</p>
               <p class="result-card-description">The controller maintains balance while moving backward under the inferred objective.</p>
@@ -213,10 +213,10 @@
         </div>
         <div class="item item-fullbody">
           <div class="result-card">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/FB-MEBE-Sidewalk.mp4"
-                    type="video/mp4">
-          </video>
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/FB-MEBE-Sidewalk.mp4"
+                      type="video/mp4">
+            </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Sideway</p>
               <p class="result-card-description">Side-stepping behavior stays controlled and natural across the rollout.</p>
@@ -225,10 +225,10 @@
         </div>
         <div class="item item-blueshirt">
           <div class="result-card">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/FB-MEBE-CCW.mp4"
-                    type="video/mp4">
-          </video>
+            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/FB-MEBE-CCW.mp4"
+                      type="video/mp4">
+            </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Turn CCW</p>
               <p class="result-card-description">The robot pivots in place with steady posture and coordinated foot placement.</p>
@@ -301,10 +301,10 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered"> -->
 
       <!-- Visual Effects. -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -316,11 +316,11 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+      <!-- <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -336,7 +336,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Matting. -->
 
     <!-- Animation. -->
@@ -345,23 +345,26 @@
         <h2 class="title is-3">Animation</h2>
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <h3 class="title is-4">Comparison between FB-MEBE and FB</h3>
         <div class="content has-text-justified">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            <!-- Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations. -->
+            FB shows much higher action rate and foot slippage behavior than FB-MEBE.
           </p>
         </div>
         <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
+          <div class="rounded-video">
+            <video id="video-comparison"
+                   controls
+                   muted
+                   preload
+                   playsinline
+                   width="100%">
+              <source src="./static/videos/Comparison.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </div>
         <!--/ Re-rendering. -->
 
