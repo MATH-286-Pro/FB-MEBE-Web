@@ -39,6 +39,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -183,7 +184,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Pitch Control</p>
-              <p class="result-card-description">The policy stabilizes the robot while matching the commanded pitch behavior.</p>
+              <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \times \exp\left(-\frac{|h - h^*|^2}{0.05^2}\right) \)</p>
             </div>
           </div>
         </div>
@@ -195,7 +196,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Forward</p>
-              <p class="result-card-description">FB-MEBE produces smooth forward motion with stable whole-body coordination.</p>
+              <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
             </div>
           </div>
         </div>
@@ -207,7 +208,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Backward</p>
-              <p class="result-card-description">The controller maintains balance while moving backward under the inferred objective.</p>
+              <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
             </div>
           </div>
         </div>
@@ -219,7 +220,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Sideway</p>
-              <p class="result-card-description">Side-stepping behavior stays controlled and natural across the rollout.</p>
+              <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
             </div>
           </div>
         </div>
@@ -231,7 +232,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Turn CCW</p>
-              <p class="result-card-description">The robot pivots in place with steady posture and coordinated foot placement.</p>
+              <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
             </div>
           </div>
         </div>
@@ -243,7 +244,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Height Change</p>
-              <p class="result-card-description">The robot pivots in place with steady posture and coordinated foot placement.</p>
+              <p class="result-card-description">\( r = \exp\left(-\frac{|h - h^*|^2}{0.05^2}\right) \)</p>
             </div>
           </div>
         </div>
