@@ -342,7 +342,32 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <!-- <h2 class="title is-3">Animation</h2> -->
+
+        <!-- FB-MEBE-Jpystick. -->
+        <h3 class="title is-4">Real-time Reward Modulation via Joystick</h3>
+        <div class="content has-text-justified">
+          <p>
+            <!-- Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations. -->
+            We demonstrate that the reward function can be modified online using a joystick, enabling real-time inference of the latent variable z. 
+            Remarkably, FB-MEBE adapts instantly to these changes, allowing interactive and responsive control of behaviors.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <div class="rounded-video">
+            <video id="Joystick"
+                   controls
+                   muted
+                   preload
+                   playsinline
+                   width="100%">
+              <source src="./static/videos/FB-MEBE-Joystick.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!--/ FB-MEBE-Jpystick. -->
 
         <!-- Re-rendering. -->
         <h3 class="title is-4">Comparison between FB-MEBE and FB</h3>
