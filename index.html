@@ -176,34 +176,76 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
+          <div class="result-card">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/FB-MEBE-Pitch.mp4"
                     type="video/mp4">
           </video>
+            <div class="result-card-content">
+              <p class="result-card-title">Reward: Pitch Control</p>
+              <p class="result-card-description">The policy stabilizes the robot while matching the commanded pitch behavior.</p>
+            </div>
+          </div>
         </div>
         <div class="item item-chair-tp">
+          <div class="result-card">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/FB-MEBE-Forward.mp4"
                     type="video/mp4">
           </video>
+            <div class="result-card-content">
+              <p class="result-card-title">Reward: Walk Forward</p>
+              <p class="result-card-description">FB-MEBE produces smooth forward motion with stable whole-body coordination.</p>
+            </div>
+          </div>
         </div>
         <div class="item item-shiba">
+          <div class="result-card">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/FB-MEBE-Backward.mp4"
                     type="video/mp4">
           </video>
+            <div class="result-card-content">
+              <p class="result-card-title">Reward: Walk Backward</p>
+              <p class="result-card-description">The controller maintains balance while moving backward under the inferred objective.</p>
+            </div>
+          </div>
         </div>
         <div class="item item-fullbody">
+          <div class="result-card">
           <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/FB-MEBE-Sidewalk.mp4"
                     type="video/mp4">
           </video>
+            <div class="result-card-content">
+              <p class="result-card-title">Reward: Walk Sideway</p>
+              <p class="result-card-description">Side-stepping behavior stays controlled and natural across the rollout.</p>
+            </div>
+          </div>
         </div>
         <div class="item item-blueshirt">
+          <div class="result-card">
           <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/FB-MEBE-CCW.mp4"
                     type="video/mp4">
           </video>
+            <div class="result-card-content">
+              <p class="result-card-title">Reward: Turn CCW</p>
+              <p class="result-card-description">The robot pivots in place with steady posture and coordinated foot placement.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item item-blueshirt">
+          <div class="result-card">
+            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/FB-MEBE-Height.mp4"
+                      type="video/mp4">
+            </video>
+            <div class="result-card-content">
+              <p class="result-card-title">Reward: Height Change</p>
+              <p class="result-card-description">The robot pivots in place with steady posture and coordinated foot placement.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
