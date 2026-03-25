@@ -193,10 +193,15 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <div class="columns is-centered">
+      <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths has-text-centered">
-          <p class="is-size-5 mb-5">
-            FB-MEBE is a behavioral foundation model that controls the motion of a quadrupedal robot. Trained fully in simulation, it allows for seamless sim-to-real transfer to real hardware. At test time, FB-MEBE can be prompted to solve unseen tasks such as reward optimization or pose reaching without additional finetuning. Below are some zero-shot tasks:
+          <p class="is-size-5 mb-5 has-text-left">
+            FB-MEBE is a behavioral foundation model that controls a quadrupedal robot using a single policy. 
+            At test time, the same policy can be conditioned on different reward functions or goals to solve unseen tasks, without any additional finetuning.
+            Below are some zero-shot tasks on reward optimization:
+            <!-- FB-MEBE is a behavioral foundation model that controls the motion of a quadrupedal robot. 
+            At test time, FB-MEBE can be prompted to solve unseen tasks such as reward optimization or pose reaching without additional finetuning. 
+            Below are some zero-shot tasks on reward optimization: -->
           </p>
         </div>
       </div>
