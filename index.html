@@ -145,9 +145,61 @@
 </section> -->
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Zero-shot reinforcement learning (RL) algorithms aim to learn a family of policies from a reward-free dataset, 
+            and recover optimal policies for any reward function directly at test time. 
+            Naturally, the quality of the pretraining dataset determines the performance of the recovered policies across tasks. 
+            However, pre-collecting a relevant, diverse dataset without prior knowledge of the downstream tasks of interest remains a challenge. 
+          </p>
+          <p>
+            In this work, we study online zero-shot RL for quadrupedal control on real robotic systems, 
+            building upon the Forward-Backward (FB) algorithm. We observe that undirected exploration yields low-diversity data, 
+            leading to poor downstream performance and rendering policies impractical for direct hardware deployment. 
+          </p>
+          <p>
+            Therefore, we introduce FB-MEBE, an <strong>online zero-shot RL</strong> algorithm that combines an unsupervised behavior exploration strategy with a regularization critic. 
+            FB-MEBE promotes exploration by <strong>maximizing the entropy of the achieved behavior distribution</strong>. 
+            Additionally, a regularization critic shapes the recovered policies toward more natural and physically plausible behaviors. 
+            We empirically demonstrate that FB-MEBE achieves and improved performance compared to other exploration strategies in a range of simulated downstream tasks, 
+            and that it renders natural policies that can be seamlessly deployed to hardware without further finetuning.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths has-text-centered">
+          <p class="is-size-5 mb-5">
+            FB-MEBE is a behavioral foundation model that controls the motion of a quadrupedal robot. Trained fully in simulation, it allows for seamless sim-to-real transfer to real hardware. At test time, FB-MEBE can be prompted to solve unseen tasks such as reward optimization or pose reaching without additional finetuning. Below are some zero-shot tasks:
+          </p>
+        </div>
+      </div>
       <div id="results-grid" class="results-carousel">
         <div class="item item-chair-tp">
           <div class="result-card">
@@ -233,49 +285,6 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Zero-shot reinforcement learning (RL) algorithms aim to learn a family of policies from a reward-free dataset, 
-            and recover optimal policies for any reward function directly at test time. 
-            Naturally, the quality of the pretraining dataset determines the performance of the recovered policies across tasks. 
-            However, pre-collecting a relevant, diverse dataset without prior knowledge of the downstream tasks of interest remains a challenge. 
-          </p>
-          <p>
-            In this work, we study online zero-shot RL for quadrupedal control on real robotic systems, 
-            building upon the Forward-Backward (FB) algorithm. We observe that undirected exploration yields low-diversity data, 
-            leading to poor downstream performance and rendering policies impractical for direct hardware deployment. 
-          </p>
-          <p>
-            Therefore, we introduce FB-MEBE, an online zero-shot RL algorithm that combines an unsupervised behavior exploration strategy with a regularization critic. 
-            FB-MEBE promotes exploration by maximizing the entropy of the achieved behavior distribution. 
-            Additionally, a regularization critic shapes the recovered policies toward more natural and physically plausible behaviors. 
-            We empirically demonstrate that FB-MEBE achieves and improved performance compared to other exploration strategies in a range of simulated downstream tasks, 
-            and that it renders natural policies that can be seamlessly deployed to hardware without further finetuning.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
 
 
 <section class="section">
