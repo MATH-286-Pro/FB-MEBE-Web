@@ -149,18 +149,6 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-grid" class="results-carousel">
-        <div class="item item-steve">
-          <div class="result-card">
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/FB-MEBE-Pitch.mp4"
-                      type="video/mp4">
-            </video>
-            <div class="result-card-content">
-              <p class="result-card-title">Reward: Pitch Control</p>
-              <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \times \exp\left(-\frac{|h - h^*|^2}{0.05^2}\right) \)</p>
-            </div>
-          </div>
-        </div>
         <div class="item item-chair-tp">
           <div class="result-card">
             <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
@@ -169,6 +157,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Forward</p>
+              <p class="result-card-description">walk forward with velocity \(v_x = +1 ~ \text{m/s} \).</p>
               <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
             </div>
           </div>
@@ -181,6 +170,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Backward</p>
+              <p class="result-card-description">walk backward with velocity \(v_x = -1 ~ \text{m/s} \).</p>
               <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
             </div>
           </div>
@@ -193,7 +183,21 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Walk Sideway</p>
+              <p class="result-card-description">walk sideway with velocity \(v_y = +0.5 ~ \text{m/s} \).</p>
               <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
+            </div>
+          </div>
+        </div>
+        <div class="item item-steve">
+          <div class="result-card">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/FB-MEBE-Pitch.mp4"
+                      type="video/mp4">
+            </video>
+            <div class="result-card-content">
+              <p class="result-card-title">Reward: Pitch Control</p>
+              <p class="result-card-description">pitch to angle \( +30^\circ \) and \( -30^\circ \).</p>
+              <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \times \exp\left(-\frac{|h - h^*|^2}{0.05^2}\right) \)</p>
             </div>
           </div>
         </div>
@@ -205,6 +209,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Turn CCW</p>
+              <p class="result-card-description">turn counterclockwise with \(\omega_z = 1 ~ \text{rad/s} \).</p>
               <p class="result-card-description">\( r = \exp\left(-\frac{\|\mathbf{v} - \mathbf{v}^*\|^2}{0.3^2}\right) \times \exp\left(-\frac{|\omega_z - \omega_z^*|^2}{0.2^2}\right) \times \exp\left(-\frac{\|\mathbf{g} - \mathbf{g}^*\|^2}{0.1^2}\right) \)</p>
             </div>
           </div>
@@ -217,6 +222,7 @@
             </video>
             <div class="result-card-content">
               <p class="result-card-title">Reward: Height Change</p>
+              <p class="result-card-description">change height to \( h = 0.24 ~ \text{m} \) and \( h = 0.32 ~ \text{m} \).</p>
               <p class="result-card-description">\( r = \exp\left(-\frac{|h - h^*|^2}{0.05^2}\right) \)</p>
             </div>
           </div>
