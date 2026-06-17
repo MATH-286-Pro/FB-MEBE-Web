@@ -65,6 +65,22 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
+.publication-conference {
+    font-family: 'Google Sans', sans-serif;
+    color: #555;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.publication-conference span {
+    display: block;
+}
+
+.publication-conference-main {
+    font-size: 1.15em;
+}
+
 .publication-venue {
     color: #555;
     width: fit-content;
